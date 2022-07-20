@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/887a835504.js" crossorigin="anonymous"></script>
+    <title>Stock de productos</title>
+</head>
+<body>
+    <main>
+        <section id="sectionForm">
+            <h1>Productos</h1>
+            <form>
+                <imput id="inProduct" type="text" placeholder="Producto"></imput>
+                <imput id="inStock" type="number" placeholder="Existencias"></imput>
+                <imput id="inPrice" type="number" placeholder="Precio"></imput>
+                <imput id="inStatus" type="number" placeholder="Status"></imput>
+                <button id="btnAddUpdate">Agregar</button>
+            </form>
+        </section>
+        <section id="sectionTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th>Producto</th>
+                        <th>Existencias</th>
+                        <th>Precio</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyProducts">
+                    <tr>
+                        <td><i class="fas fa-trash"></i></td>
+                        <td><i class="fas fa-pen"></i></td>
+                        <td>Lapiz</td>
+                        <td>20</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/Product.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/script.js"></script>
+</html>
